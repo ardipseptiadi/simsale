@@ -1,0 +1,41 @@
+#logo{
+ width: 100px;
+ margin: auto;
+ padding: 1%;
+ background-image: url('images/header_logo.png');
+ border: 0px solid #000;
+}
+
+.logo2 {
+width: 100%;
+margin: auto;
+background-image: url("images/header_logo.png");
+border: 0px solid #000;
+}
+#container {
+width: 100%;
+height: 100px;
+margin: auto;
+background-size: 100%;
+background: black;
+border: 5px solid #000;
+}
+#pageintro {
+width: 100%;
+margin: auto;
+padding: 1%;
+}
+.crud {
+width: 10%;
+border: 5px solid #000;
+}
+#aksi {
+width: 100%;
+background-size: 100%;
+background: grey;
+}
+#aksi2 {
+width: 12.5%;
+background-size: 100%;
+background: maroon;
+.modal-footer {   border-top: 0px; }
