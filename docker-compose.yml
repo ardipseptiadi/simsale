@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: dockerenv
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - 7991:8891

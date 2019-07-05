@@ -12,14 +12,14 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
 
-	$konek=mysql_connect('localhost','root','') or die('server down') ;
+	$konek=mysql_connect('host.docker.internal:3308','root','abc123') or die('server down') ;
 	mysql_select_db('radjasale',$konek) ;
-	
+
  	$username = $_POST['username'];
  	$password = $_POST['password'];
 	$akses=$_POST['akses'];
 
- 	
+
 
  	if ($akses == "admin"){
 		$sql = "SELECT * FROM pengguna WHERE username='$username' AND password='$password'";

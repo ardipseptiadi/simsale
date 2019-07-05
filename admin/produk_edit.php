@@ -20,12 +20,12 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
 <div class="bgded" style="background-image:url('../images/demo/backgrounds/back.jpg');">
-  <div class="overlay"> 
+  <div class="overlay">
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <div class="wrapper row0">
-      <div id="topbar" class="clear"> 
+      <div id="topbar" class="clear">
         <!-- ################################################################################################ -->
         <!--<div class="fl_left">
           <ul class="nospace inline pushright">
@@ -54,7 +54,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="wrapper row1">
       <header id="header" class="clear"><!--<img src="images/header.png">
         <!-- ################################################################################################ -->
-        <div id="logo" class="fl_left">  
+        <div id="logo" class="fl_left">
         </div>
        <nav id="mainav" class="fl_right">
           <ul class="clear">
@@ -92,15 +92,15 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row2">
-  <div id="breadcrumb" class="clear"> 
+  <div id="breadcrumb" class="clear">
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="home.php">Beranda</a></li>
 	  <li><a>Data Master</a></li>
       <li><a href="produk.php">Data Produk</a></li>
 	  <li><a>Edit Data</a></li>
-	  
-      
+
+
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -113,18 +113,18 @@ Licence URI: http://www.os-templates.com/template-terms
 <div id="crud" align="center"><a href="monitor_tambah.php">Tambah Data</a></p></div>
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <main class="container clear"> 
+  <main class="container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    
-      <!-- ################################################################################################ -->
-      
 
-    
+      <!-- ################################################################################################ -->
+
+
+
 <?php
 	include("koneksi.php");
 	error_reporting(0);
-?> 
+?>
 <center>
 <?php
 		include "koneksi.php"
@@ -141,7 +141,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	include("koneksi.php");
 	error_reporting(0);
 
- $sambung = mysql_connect("localhost", "root", "") or die ("Gagal konek ke server.");
+ $sambung = mysql_connect("host.docker.internal:3308", "root", "abc123") or die ("Gagal konek ke server.");
 mysql_select_db("radjasale") or die ("Gagal membuka database.");
 //$edit=mysql_query("SELECT * FROM mhs WHERE nim='$_GET[nim]'");
 //$r_edit=mysql_fetch_array($edit);
@@ -177,13 +177,13 @@ $result =  mysql_query($query, $sambung) or die("gagal melakukan query");
 </table>
 </form>
 </center>
- 
+
       <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
- 
+
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -194,7 +194,7 @@ $result =  mysql_query($query, $sambung) or die("gagal melakukan query");
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row5">
-  <div id="copyright" class="clear"> 
+  <div id="copyright" class="clear">
     <!-- ################################################################################################ -->
     <p class="fl_center">CV. Radja Sale Tasikmalaya</a></p>
     <!-- ################################################################################################ -->
@@ -212,4 +212,3 @@ $result =  mysql_query($query, $sambung) or die("gagal melakukan query");
 
 </body>
 </html>
-
