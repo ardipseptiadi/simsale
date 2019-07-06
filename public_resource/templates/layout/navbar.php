@@ -13,9 +13,9 @@
       </li>
       <li class=""><a class="drop" href="#">Transaksi</a>
         <ul>
+          <li><a href="transaksi.php?list=permintaan">Permintaan</a></li>
           <li><a href="transaksi.php?list=persediaan">Persediaan</a></li>
           <li><a href="transaksi.php?list=pengadaan">Pengadaan</a></li>
-          <li><a href="transaksi.php?list=pesanan">Pesanan</a></li>
           <li><a href="transaksi.php?list=pengiriman">Persiapan & Pengiriman</a></li>
           <li><a href="transaksi.php?list=peramalan">Peramalan</a></li>
         </ul>

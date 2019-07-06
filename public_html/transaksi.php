@@ -16,9 +16,9 @@
         $view = 'list_pengadaan';
         $breadcrumb = ['title'=>'Pengadaan','link'=>'transaksi.php?list=pengadaan'];
         break;
-      case 'pesanan':
-        $view = 'list_pesanan';
-        $breadcrumb = ['title'=>'Pesanan','link'=>'transaksi.php?list=pesanan'];
+      case 'permintaan':
+        $view = 'list_permintaan';
+        $breadcrumb = ['title'=>'Permintaan','link'=>'transaksi.php?list=permintaan'];
         break;
       case 'pengiriman':
         $view = 'list_pengiriman';

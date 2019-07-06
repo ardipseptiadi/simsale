@@ -114,3 +114,20 @@ function deleteProduk($id)
   closeConnection($conn);
   return TRUE;
 }
+
+function getAllPermintaan()
+{
+  $data = [];
+  $conn = openConnection();
+  if($conn !== FALSE){
+    $exec_query = mysql_query("SELECT * FROM rs_permintaan");
+    if($exec_query !== FALSE && mysql_num_rows($exec_query) > 0){
+      while($res_fetch = mysql_fetch_assoc($exec_query)){
+        $data[] = $res_fetch;
+      }
+    }
+    mysql_free_result($exec_query);
+  }
+  closeConnection($conn);
+  return $data;
+}

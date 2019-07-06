@@ -43,45 +43,7 @@
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <div class="wrapper row1">
-      <header id="header" class="clear"><!--<img src="images/header.png">
-        <!-- ################################################################################################ -->
-
-        <nav id="mainav" class="fl_right">
-          <ul class="clear">
-            <li class="active"><a href="index.php">Beranda</a></li>
-            <!--<li><a class="drop" href="#">Laporan</a>
-              <ul>
-                <li><a href="laporan_monitor.php">Laporan Monitor</a></li>
-                <li><a href="laporan_cpu.php">Laporan CPU</a></li>
-                <li><a href="laporan_mouse.php">Laporan Mouse</a></li>
-                <li><a href="laporan_keyboard.php">Laporan Keyboard</a></li>
-                <li><a href="laporan_kerusakan.php">Laporan Kerusakan</a></li>
-              </ul>
-            </li> -->
-            <li><a class="drop" href="#">Data Master</a>
-              <ul>
-                <!--<li><a class="drop" href="#">Data Aset</a>
-                  <ul>
-                    <li><a href="monitor.php">Aset Monitor</a></li>
-                    <li><a href="cpu.php">Aset CPU</a></li>
-                    <li><a href="mouse.php">Aset Mouse</a></li>
-					<li><a href="keyboard.php">Aset Keyboard</a></li>
-                  </ul>
-                </li>-->
-				<li><a href="master.php?list=produk">Data Produk</a></li>
-				<li><a href="master.php?list=bahan-baku">Data Bahan Baku</a></li>
-				<li><a href="master.php?list=supplier">Data Supplier</a></li>
-
-
-
-
-              </ul>
-            </li>
-            <li><a href="tentang.php">Tentang</a></li>
-          </ul>
-        </nav>
-        <!-- ################################################################################################ -->
-      </header>
+        <?php  require_once(TEMPLATES_PATH . "/layout/navbar.php"); ?>
     </div>
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
